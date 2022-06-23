@@ -5,12 +5,46 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/styles/styles.css">
-    <title>Document</title>
+    <title>Splitter</title>
 </head>
 <body>
-    <div>
-        <h1>Tip Calculator</h1>
-    </div>
+    <section class="title">
+        <h1>Splitter</h1>
+    </section>
+    <main class="calc-body">
+        <section class="calc-input">
+            <form class="form">
+                <label for="bill">Bill</label>
+                <br>
+                <input type="text" class="bill-input" placeholder="$">
+                <br>
+                <p>Select Tip %</p>
+                <div class="tip-btns">
+                    <button>5%</button>
+                    <button>10%</button>
+                    <button>15%</button>
+                    <br>
+                    <button>25%</button>
+                    <button>50%</button>
+                    <button>Custom</button>
+                </div>
+                <br>
+                <p>Number of People</p>
+                <input type="text" class="people-input">
+            </form>
+        </section>
+        <section class="calc-output">
+            <div class="output">
+                <p>Tip Amount</p>
+                <p>/ person</p>
+                <p>$4.32</p>
+                <p>Total</p>
+                <p>/ person</p>
+                <p>%30.00</p>
+                <button>RESET</button>
+            </div>
+        </section>
+    </main>
     <script type="text/javascript" src="script.js"></script>
 </body>
 </html>

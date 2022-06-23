@@ -1,1 +1,6 @@
-/*# sourceMappingURL=styles.css.map */
+main, h1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10%;
+}/*# sourceMappingURL=styles.css.map */
