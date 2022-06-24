@@ -1,32 +1,31 @@
-// event listener for every every input and button 
-// as input or button changes so does the output
-let savedTotal = 0;
+let tipTotal = 0;
+let dividedTotal = 0;
 let billTotal = document.querySelector('.bill-input');
 let tips = document.querySelectorAll('.tips');
+let numOfPeople = document.querySelector('.people-input')
 
-
-function billInput() {
+function handleBillInput() {
     billTotal.addEventListener('input', function (value) {
     });
 };
-billInput();
+handleBillInput();
 
 // tip will depend on bill total
-function tipsInput() {
+function handleTipsInput() {
     tips.forEach(function(tip) {
         tip.addEventListener('click', function (event, value) {
             event.preventDefault();
-            if (billTotal.value === billTotal.value) {
-                savedTotal += billTotal.value * tip.value
-            }
+            tipTotal += billTotal.value * tip.value
+            console.log(tipTotal);
         })
     });
 };
-tipsInput();
+handleTipsInput();
 
-function numOfPeople() {
-    document.querySelector('.people-input').addEventListener('input', function () {
+function handleNumOfPeople() {
+    numOfPeople.addEventListener('input', function () {
+    dividedTotal += (tipTotal / numOfPeople.value);
     });
 };
-numOfPeople();
+handleNumOfPeople();
 
