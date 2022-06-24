@@ -16,21 +16,21 @@
             <form class="form">
                 <label for="bill">Bill</label>
                 <br>
-                <input type="text" class="bill-input" placeholder="$">
+                <input type="number" class="bill-input" placeholder="$">
                 <br>
                 <p>Select Tip %</p>
-                <div class="tip-btns">
-                    <button>5%</button>
-                    <button>10%</button>
-                    <button>15%</button>
+                <div class="tip-btns" type="button">
+                    <button value=".05" class="tips">5%</button>
+                    <button value=".10" class="tips">10%</button>
+                    <button value=".15" class="tips">15%</button>
                     <br>
-                    <button>25%</button>
-                    <button>50%</button>
-                    <button>Custom</button>
+                    <button value=".25" class="tips">25%</button>
+                    <button value=".50"class="tips">50%</button>
+                    <!-- <button>Custom</button> -->
                 </div>
                 <br>
                 <p>Number of People</p>
-                <input type="text" class="people-input">
+                <input type="number" class="people-input">
             </form>
         </section>
         <section class="calc-output">
