@@ -29,9 +29,11 @@ handleTipsInput();
 function handleTotals() {
     numOfPeople.addEventListener('input', function () {
     dividedTotal += (tipTotal / numOfPeople.value);
-    tipDisplay.textContent = dividedTotal;
+    dividedTotal = parseFloat(dividedTotal.toFixed(2));
+    tipDisplay.textContent = ('$' + dividedTotal);
     total += (billTotal.value / numOfPeople.value + dividedTotal);
-    totalDisplay.textContent = total;
+    total = parseFloat(total.toFixed(2));
+    totalDisplay.textContent = ('$' + total);
     });
 };
 handleTotals();
